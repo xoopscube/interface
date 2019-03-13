@@ -1,6 +1,10 @@
 # Interface 
 
-An abstract data type (ADT) is a mathematical model for data types, where a data type is defined by its behavior (semantics) from the point of view of a user of the data, specifically in terms of possible values, possible operations on data of this type, and the behavior of these operations. This contrasts with data structures, which are concrete representations of data, and are the point of view of an implementer, not a user.
+### Interfaces - the next level of abstraction
+
+Interfaces resemble abstract classes in that they include abstract methods that the programmer must define in the classes that inherit from the interface. In this way, interfaces contribute to code organization because they commit the child classes to abstract methods that they should implement. The use of interfaces becomes very helpful when we work in a team of programmers and want to ensure that all the programmers write the methods that they should work on, or even in the case of a single programmer that wants to commit himself to write certain methods in the child classes.
+
+`An interface commits its child classes to abstract methods that they should implement.`
 
 An **interface** defines the signature operations of an entity, it also sets the communication boundary between two entities, in this case two pieces of software. It generally refers to an abstraction that an asset provides of itself to the outside.
 
@@ -22,13 +26,12 @@ Use an interface when:
 Many other patterns use interfaces, a lot of them depend on the interface pattern.
 It is possible to combine the interface pattern with virtually any other pattern to make them more flexible.
 
+* [Interfaces : the next level of abstraction](https://phpenthusiast.com/object-oriented-php-tutorials/interfaces)
 
-Classes in languages like Java and C#, however, also define representation (fields) in addition to behavior (methods). One of the basic tenets of Object-oriented programming is that objects cannot know the representation of other objects even of the same type. However, if you use classes as types, other objects of the same class can know the representation of other objects, even private fields. Therefore, using classes as types breaks Object-oriented programming. (Unfortunately, in both Java and C#, classes are types.)
+* [PHP manual : object interface](http://php.net/manual/en/language.oop5.interfaces.php)
 
-The only way to do object-oriented programming in Java or C# is to use classes only as factories (i.e. only directly after new) and never as types (i.e. never as the type of a field, return type or parameter type of a method or type argument to a generic type, never cast to a class, never use it with instanceof). And as types, use only interfaces, not classes (and certainly not primitives in Java).
-
-That's what interfaces do: they enable Object-oriented programming in Java and C#. Without them, XOOPSCube Object-oriented programming would simply be impossible in PHP.
-
-[PHP manual : object interface](http://php.net/manual/en/language.oop5.interfaces.php)
+* [PHP manual : class abstraction](http://php.net/manual/en/language.oop5.abstract.php)
 
 Learn more about **Interface** and how to implement from the Wiki documentation examples.
+
+* [XCL : documentation](https://github.com/xoopscube/documentation)
